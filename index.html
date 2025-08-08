@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <input type="text" id="searchInput" placeholder="Search for places..." />
+      <div class="weather-icon">
+        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather" id="mainIcon">
+      </div>
+      <div class="temperature" id="mainTemp">12°C</div>
+      <div class="date-time" id="mainTime">Monday, 16:00</div>
+      <div class="condition">Mostly Cloudy</div>
+      <div class="location" id="mainLocation">New York, NY, USA</div>
+    </aside>
+
+    <main class="dashboard">
+      <div class="tabs">
+        <button class="tab active">Today</button>
+        <button class="tab">Week</button>
+      </div>
+
+      <div class="weekly-forecast" id="forecast">
+        <!-- JS will insert daily forecast cards here -->
+      </div>
+
+      <h2>Today's Highlights</h2>
+      <div class="highlights">
+        <div class="highlight">
+          <h3>UV Index</h3>
+          <p id="uvIndex">5</p>
+        </div>
+        <div class="highlight">
+          <h3>Wind Status</h3>
+          <p><span id="windSpeed">7.70</span> km/h</p>
+        </div>
+        <div class="highlight">
+          <h3>Sunrise & Sunset</h3>
+          <p>
+            🌅 <span id="sunrise">6:35 AM</span><br>
+            🌇 <span id="sunset">5:42 PM</span>
+          </p>
+        </div>
+        <div class="highlight">
+          <h3>Humidity</h3>
+          <p><span id="humidity">12%</span> Normal</p>
+        </div>
+        <div class="highlight">
+          <h3>Visibility</h3>
+          <p><span id="visibility">5.2 km</span> Average</p>
+        </div>
+        <div class="highlight">
+          <h3>Air Quality</h3>
+          <p><span id="airQuality">105</span> Unhealthy</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
